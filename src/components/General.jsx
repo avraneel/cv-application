@@ -4,7 +4,7 @@ import TextInput from "./TextInput";
 
 export default function General() {
   return (
-    <section>
+    <section className="general">
       <h2>General Information</h2>
       <TextInput id="name" name="Name" inputType="text" />
       <TextInput id="email" name="Email ID" inputType="email" />
