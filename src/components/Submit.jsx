@@ -1,3 +1,11 @@
+import Button from "./Button";
+
 export default function Submit() {
-  return <button>Submit</button>;
+  function handleClick() {}
+
+  return (
+    <>
+      <Button onClick={handleClick}>Submit</Button>
+    </>
+  );
 }

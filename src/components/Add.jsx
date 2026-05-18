@@ -1,11 +1,11 @@
 import Button from "./Button";
 
-export default function EditButton() {
+export default function Add() {
   function handleClick() {}
 
   return (
     <>
-      <Button onClick={handleClick}>Edit</Button>
+      <Button onClick={handleClick}>Add</Button>
     </>
   );
 }

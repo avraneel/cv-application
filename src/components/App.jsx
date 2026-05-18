@@ -1,3 +1,4 @@
+import Education from "./Education";
 import General from "./General";
 
 export default function App() {
@@ -5,6 +6,7 @@ export default function App() {
     <>
       <h1>CV Application</h1>
       <General />
+      <Education />
     </>
   );
 }
