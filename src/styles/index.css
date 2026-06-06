@@ -28,7 +28,7 @@ source {
 /* Colors */
 
 :root {
-  --accent-color: #292929; /* Graphite */
+  --accent-color: #333333; /* Graphite */
   --bg-color: #e8e8e8; /* Alabaster Gray */
   --border-radius: 12px;
 }
