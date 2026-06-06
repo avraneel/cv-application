@@ -13,13 +13,13 @@ export default function EducationEntry() {
       <Dropdown id="education" label="Education" />
       <TextInput id="specialization" label="Specialization" inputType="text" />
       <TextInput id="name" label="Name of Institution" inputType="text" />
-      <TextInput id="startDate" label="Date of Joining" inputType="date" />
       <Checkbox
         name="current"
         label="Are you currently studying here?"
         current={current}
         setCurrent={setCurrent}
       />
+      <TextInput id="startDate" label="Date of Joining" inputType="date" />
       <TextInput
         id="endDate"
         label="Date of Leaving"

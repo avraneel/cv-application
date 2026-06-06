@@ -12,13 +12,13 @@ export default function ExperienceEntry() {
     <form method="post">
       <TextInput id="companyName" label="Company Name" inputType="text" />
       <TextInput id="position" label="Position Title" inputType="text" />
-      <TextInput id="startDate" label="Date of Joining" inputType="date" />
       <Checkbox
         name="current"
         label="Is this your current company?"
         current={current}
         setCurrent={setCurrent}
       />
+      <TextInput id="startDate" label="Date of Joining" inputType="date" />
       <TextInput
         id="endDate"
         label="Date of Leaving"
