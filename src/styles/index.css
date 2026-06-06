@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-/* *:not(dialog) {
-  margin: 0;
-} */
-
 input,
 button,
 select,
@@ -24,17 +20,30 @@ img {
   max-width: 100%;
 }
 
-/*----*/
-.content {
-  display: grid;
-  grid-template-columns: 2;
+/* Fonts */
+
+@font-face {
+  font-family: "Figtree";
+  src:
+    url("../assets/fonts/OpenSans-Regular.woff") format("woff2"),
+    url("../assets/fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Color */
+
+:root {
+  --accent-color: hsl(284, 56%, 36%);
+  --bg-color: hsl(0, 0%, 96%);
+}
+
+body {
+  font-family: "Figtree", sans-serif;
 }
 
 form {
   display: grid;
-  gap: 0.5rem;
-
-  @media (width > 700px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  gap: 1em;
 }

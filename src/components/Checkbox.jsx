@@ -1,3 +1,5 @@
+import "../styles/checkBoxGroup.css";
+
 export default function Checkbox({ name, label, current, setCurrent }) {
   function handleClick() {
     setCurrent(!current);

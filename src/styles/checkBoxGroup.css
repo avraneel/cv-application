@@ -1,0 +1,5 @@
+.checkboxGroup {
+  grid-column: 1 / 2;
+  display: flex;
+  gap: 0.5em;
+}

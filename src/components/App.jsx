@@ -6,8 +6,10 @@ import Submit from "./Submit";
 export default function App() {
   return (
     <>
-      <div className="content">
+      <header>
         <h1>CV Application</h1>
+      </header>
+      <div className="content">
         <General />
         <Education />
         <Experience />

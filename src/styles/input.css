@@ -1,3 +1,23 @@
 .inputGroup {
   display: grid;
+  gap: 0.5rem;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid hsla(0, 0%, 0%, 0.1);
+  border-radius: 10px;
+}
+
+input,
+select {
+  padding: 0.5em 1em;
+}
+
+input:focus:not([type="checkbox"]),
+select:focus {
+  border: 2px solid var(--accent-color);
+  outline: none;
+  margin: -1px; /* Putting this on checkbox causes lots of problems */
 }

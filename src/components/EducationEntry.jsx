@@ -4,6 +4,8 @@ import Checkbox from "./Checkbox";
 import Dropdown from "./Dropdown";
 import TextInput from "./TextInput";
 
+import "../styles/form.css";
+
 export default function EducationEntry() {
   const [current, setCurrent] = useState(false);
 
@@ -12,7 +14,7 @@ export default function EducationEntry() {
       <Dropdown id="education" label="Education" />
       <TextInput id="specialization" label="Specialization" inputType="text" />
       <TextInput id="name" label="Name of Institution" inputType="text" />
-      <TextInput id="date" label="Date of Joining" inputType="date" />
+      <TextInput id="startDate" label="Date of Joining" inputType="date" />
       <Checkbox
         name="current"
         label="Are you currently studying here?"
