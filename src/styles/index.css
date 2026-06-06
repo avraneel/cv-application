@@ -25,11 +25,11 @@ source {
   max-width: 100%;
 }
 
-/* Color */
+/* Colors */
 
 :root {
-  --accent-color: #292929;
-  --bg-color: #e8e8e8;
+  --accent-color: #292929; /* Graphite */
+  --bg-color: #e8e8e8; /* Alabaster Gray */
   --border-radius: 12px;
 }
 
