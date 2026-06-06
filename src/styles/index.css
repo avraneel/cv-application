@@ -47,3 +47,8 @@ form {
   display: grid;
   gap: 1em;
 }
+
+.education {
+  display: grid;
+  gap: 1em;
+}
