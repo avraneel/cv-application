@@ -1,14 +1,18 @@
 import Education from "./Education";
 import General from "./General";
 import Experience from "./Experience";
+import Submit from "./Submit";
 
 export default function App() {
   return (
     <>
-      <h1>CV Application</h1>
-      <General />
-      <Education />
-      <Experience />
+      <div className="content">
+        <h1>CV Application</h1>
+        <General />
+        <Education />
+        <Experience />
+        <Submit />
+      </div>
     </>
   );
 }

@@ -1,0 +1,40 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* *:not(dialog) {
+  margin: 0;
+} */
+
+input,
+button,
+select,
+textarea,
+select {
+  font: inherit;
+}
+
+picture,
+source,
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*----*/
+.content {
+  display: grid;
+  grid-template-columns: 2;
+}
+
+form {
+  display: grid;
+  gap: 0.5rem;
+
+  @media (width > 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
