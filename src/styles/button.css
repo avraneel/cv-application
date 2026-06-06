@@ -1,0 +1,13 @@
+.button {
+  font-weight: 800;
+  padding: 1em 2em;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--accent-color);
+  color: hsl(0, 0%, 100%);
+  justify-self: end;
+}
+
+.submit {
+  margin-top: 2em;
+}

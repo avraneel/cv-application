@@ -3,6 +3,7 @@ import { useState } from "react";
 import TextInput from "./TextInput";
 import TextArea from "./TextArea";
 import Checkbox from "./Checkbox";
+import Submit from "./Submit";
 
 export default function ExperienceEntry() {
   const [current, setCurrent] = useState(false);
@@ -25,6 +26,7 @@ export default function ExperienceEntry() {
         current={current}
       />
       <TextArea />
+      <Submit />
     </form>
   );
 }

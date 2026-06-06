@@ -1,5 +1,3 @@
-import "../styles/textarea.css";
-
 export default function TextArea() {
   return (
     <div className="textArea inputGroup">

@@ -1,4 +1,5 @@
 import TextInput from "./TextInput";
+import Submit from "./Submit";
 
 export default function General() {
   return (
@@ -9,6 +10,7 @@ export default function General() {
         <TextInput id="email" label="Email ID" inputType="email" />
         <TextInput id="phone" label="Phone Number" inputType="tel" />
         <TextInput id="dob" label="Date of Birth" inputType="date" />
+        <Submit />
       </form>
     </section>
   );

@@ -1,0 +1,28 @@
+body {
+  padding: 4em 12em;
+  background-color: var(--bg-color);
+}
+
+.content {
+  padding: 4em;
+  border-radius: var(--border-radius);
+  background-color: hsl(0, 0%, 100%, 1);
+  display: grid;
+  gap: 2rem;
+}
+
+.main,
+section {
+  display: grid;
+}
+
+.main {
+  gap: 3rem;
+}
+
+section {
+  gap: 2rem;
+  border: 1px solid var(--accent-color);
+  border-radius: var(--border-radius);
+  padding: 2em;
+}
