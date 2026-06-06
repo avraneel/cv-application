@@ -9,7 +9,6 @@ export default function General() {
         <TextInput id="email" label="Email ID" inputType="email" />
         <TextInput id="phone" label="Phone Number" inputType="tel" />
         <TextInput id="dob" label="Date of Birth" inputType="date" />
-        <TextInput id="nationality" label="Nationality" inputType="text" />
       </form>
     </section>
   );
