@@ -10,7 +10,7 @@ export default function TextInput({ id, label, inputType, current = false }) {
   return (
     <div className={`${id} inputGroup`}>
       <label htmlFor={id}>{label}</label>
-      <input type={inputType} name={id} id={id} />
+      <input type={inputType} name={id} id={id} autoComplete="off" />
     </div>
   );
 }

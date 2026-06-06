@@ -2,6 +2,15 @@ import TextInput from "./TextInput";
 import Submit from "./Submit";
 
 export default function General() {
+  const generalView = (
+    <div className="generalView">
+      <div className="nameItem">
+        <h3>Name</h3>
+        <p>{name}</p>
+      </div>
+    </div>
+  );
+
   return (
     <section className="general">
       <h2>General Information</h2>
