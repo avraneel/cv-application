@@ -15,6 +15,10 @@ select {
   padding: 0.5em 1em;
 }
 
+textarea {
+  padding: 1em 1em;
+}
+
 input:focus:not([type="checkbox"]),
 select:focus {
   border: 2px solid var(--accent-color);
