@@ -13,8 +13,8 @@ export default function App() {
         </header>
         <main className="main">
           <General />
-          <Education />
-          <Experience />
+          {/* <Education />
+          <Experience /> */}
         </main>
       </div>
     </>
