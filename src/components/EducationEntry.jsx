@@ -7,6 +7,13 @@ import Submit from "./Submit";
 
 export default function EducationEntry() {
   const [current, setCurrent] = useState(false);
+  const [education, setEducation] = useState({
+    specialization: "",
+    name: "",
+    current: false,
+    startDate: "",
+    endDate: "",
+  });
 
   return (
     <form method="post">
