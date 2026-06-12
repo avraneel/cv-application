@@ -12,10 +12,12 @@ export default function General() {
     dob: "",
   });
 
+  const [formFlag, setFormFlag] = useState(true);
+
   const formComponent = (
     <section className="general-form">
       <h2>General Information</h2>
-      <form action="" method="post">
+      <form action="" method="post" onSubmit={handleSubmit}>
         <TextInput
           id="name"
           label="Name"
@@ -73,40 +75,15 @@ export default function General() {
     </section>
   );
 
-  return (
-    <section className="general">
-      <h2>General Information</h2>
-      <form action="" method="post">
-        <TextInput
-          id="name"
-          label="Name"
-          inputType="text"
-          value={generalInfo}
-          setState={setGeneralInfo}
-        />
-        <TextInput
-          id="email"
-          label="Email ID"
-          inputType="email"
-          value={generalInfo}
-          setState={setGeneralInfo}
-        />
-        <TextInput
-          id="phone"
-          label="Phone Number"
-          inputType="tel"
-          value={generalInfo}
-          setState={setGeneralInfo}
-        />
-        <TextInput
-          id="dob"
-          label="Date of Birth"
-          inputType="date"
-          value={generalInfo}
-          setState={setGeneralInfo}
-        />
-        <Submit />
-      </form>
-    </section>
-  );
+  function handleSubmit(e) {
+    // Prevent the browser from reloading the page
+    e.preventDefault();
+    setFormFlag(!formFlag);
+  }
+
+  if (formFlag) {
+    return <>{formComponent}</>;
+  } else {
+    return <>{displayComponent}</>;
+  }
 }
