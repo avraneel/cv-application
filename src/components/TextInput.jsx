@@ -3,30 +3,46 @@ import "../styles/input.css";
 /**
  * @desc Component comprising a label and input entry together
  */
-export default function TextInput({
-  id,
-  label,
-  inputType,
-  current = false,
-  value,
-  setState,
-}) {
-  console.log(value);
-  if (id === "endDate" && current === true) {
+export default function TextInput({ id, label, inputType, value, setState }) {
+  // dont render end date if currently working/studying
+  if (id === "endDate" && value.current === true) {
     return null;
   }
 
-  return (
-    <div className={`${id} inputGroup`}>
-      <label htmlFor={id}>{label}</label>
-      <input
-        type={inputType}
-        name={id}
-        id={id}
-        value={value[id]} // [] notation for computed property
-        onChange={(e) => setState({ ...value, [id]: e.target.value })}
-        autoComplete="off"
-      />
-    </div>
-  );
+  function updateState(e) {
+    if (inputType === "checkbox") {
+      setState({ ...value, [id]: e.target.checked });
+    } else {
+      setState({ ...value, [id]: e.target.value });
+    }
+  }
+
+  if (inputType === "checkbox") {
+    return (
+      <div className={`${id} checkboxGroup`}>
+        <input
+          type="checkbox"
+          name={id}
+          id={id}
+          checked={value[id]}
+          onChange={updateState}
+        />
+        <label htmlFor={id}>{label}</label>
+      </div>
+    );
+  } else {
+    return (
+      <div className={`${id} inputGroup`}>
+        <label htmlFor={id}>{label}</label>
+        <input
+          type={inputType}
+          name={id}
+          id={id}
+          value={value[id]} // [] notation for computed property
+          onChange={updateState}
+          autoComplete="off"
+        />
+      </div>
+    );
+  }
 }

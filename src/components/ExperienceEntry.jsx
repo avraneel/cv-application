@@ -2,11 +2,10 @@ import { useState } from "react";
 
 import TextInput from "./TextInput";
 import TextArea from "./TextArea";
-import Checkbox from "./Checkbox";
 import Button from "./Button";
 
 export default function ExperienceEntry() {
-  const [current, setCurrent] = useState(false);
+  const [experienceInfo, setExperienceInfo] = useState("");
 
   function handleSubmit() {}
 
@@ -14,11 +13,12 @@ export default function ExperienceEntry() {
     <form method="post" onSubmit={handleSubmit}>
       <TextInput id="companyName" label="Company Name" inputType="text" />
       <TextInput id="position" label="Position Title" inputType="text" />
-      <Checkbox
-        name="current"
+      <TextInput
+        id="current"
         label="Is this your current company?"
-        current={current}
-        setCurrent={setCurrent}
+        inputType="checkbox"
+        value={experienceInfo}
+        setState={setExperienceInfo}
       />
       <TextInput id="startDate" label="Date of Joining" inputType="date" />
       <TextInput

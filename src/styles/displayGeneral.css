@@ -7,14 +7,17 @@
 
 .disp-item {
   display: grid;
-  grid-template-columns: 2;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
   gap: 1em;
 }
 
 .item-name {
   grid-column: 1;
+  text-align: right;
 }
 
 .item-value {
   grid-column: 2;
+  text-align: start;
+  word-wrap: break-word;
 }
