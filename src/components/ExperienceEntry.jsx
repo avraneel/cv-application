@@ -29,42 +29,42 @@ export default function ExperienceEntry() {
     <form method="post" onSubmit={handleSubmit}>
       <TextInput
         id="companyName"
-        label="Company Name"
+        label="Company Name *"
         inputType="text"
         value={experienceInfo}
         setState={setExperienceInfo}
       />
       <TextInput
         id="position"
-        label="Position Title"
+        label="Position Title *"
         inputType="text"
         value={experienceInfo}
         setState={setExperienceInfo}
       />
       <TextInput
         id="current"
-        label="Is this your current company?"
+        label="Is this your current company? *"
         inputType="checkbox"
         value={experienceInfo}
         setState={setExperienceInfo}
       />
       <TextInput
         id="startDate"
-        label="Date of Joining"
+        label="Date of Joining *"
         inputType="date"
         value={experienceInfo}
         setState={setExperienceInfo}
       />
       <TextInput
         id="endDate"
-        label="Date of Leaving"
+        label="Date of Leaving *"
         inputType="date"
         value={experienceInfo}
         setState={setExperienceInfo}
       />
       <TextArea
         id="responsibilities"
-        label="Responsibilities"
+        label="Responsibilities *"
         value={experienceInfo}
         setState={setExperienceInfo}
       />

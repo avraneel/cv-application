@@ -20,20 +20,20 @@ export default function EducationEntry() {
     <form method="post" onSubmit={handleSubmit}>
       <Dropdown
         id="education"
-        label="Education"
+        label="Education *"
         value={educationInfo}
         setState={setEducationInfo}
       />
       <TextInput
         id="specialization"
-        label="Specialization"
+        label="Specialization *"
         inputType="text"
         value={educationInfo}
         setState={setEducationInfo}
       />
       <TextInput
         id="name"
-        label="Name of Institution"
+        label="Name of Institution *"
         inputType="text"
         value={educationInfo}
         setState={setEducationInfo}
@@ -47,14 +47,14 @@ export default function EducationEntry() {
       />
       <TextInput
         id="startDate"
-        label="Date of Joining"
+        label="Date of Joining *"
         inputType="date"
         value={educationInfo}
         setState={setEducationInfo}
       />
       <TextInput
         id="endDate"
-        label="Date of Leaving"
+        label="Date of Leaving *"
         inputType="date"
         value={educationInfo}
         setState={setEducationInfo}

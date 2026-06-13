@@ -26,28 +26,28 @@ export default function General() {
       <form action="" method="post" onSubmit={handleSubmit}>
         <TextInput
           id="name"
-          label="Name"
+          label="Name *"
           inputType="text"
           value={generalInfo}
           setState={setGeneralInfo}
         />
         <TextInput
           id="email"
-          label="Email ID"
+          label="Email ID*"
           inputType="email"
           value={generalInfo}
           setState={setGeneralInfo}
         />
         <TextInput
           id="phone"
-          label="Phone Number"
+          label="Phone Number *"
           inputType="tel"
           value={generalInfo}
           setState={setGeneralInfo}
         />
         <TextInput
           id="dob"
-          label="Date of Birth"
+          label="Date of Birth *"
           inputType="date"
           value={generalInfo}
           setState={setGeneralInfo}
