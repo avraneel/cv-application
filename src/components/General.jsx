@@ -2,7 +2,13 @@ import { useState } from "react";
 
 import TextInput from "./TextInput";
 import Submit from "./Submit";
+import EditButton from "./EditButton";
+import Button from "./Button";
 
+/**
+ * @desc Stores form information in one state, and flag to render what kind
+ * of display in another state
+ */
 export default function General() {
   // Setting state
   const [generalInfo, setGeneralInfo] = useState({
@@ -46,7 +52,7 @@ export default function General() {
           value={generalInfo}
           setState={setGeneralInfo}
         />
-        <Submit />
+        <Button>Submit</Button>
       </form>
     </section>
   );
@@ -71,6 +77,7 @@ export default function General() {
           <h4>Date of Birth</h4>
           <p>{generalInfo.dob}</p>
         </div>
+        <EditButton />
       </div>
     </section>
   );
