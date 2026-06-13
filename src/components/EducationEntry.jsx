@@ -3,7 +3,7 @@ import { useState } from "react";
 import Checkbox from "./Checkbox";
 import Dropdown from "./Dropdown";
 import TextInput from "./TextInput";
-import Submit from "./Submit";
+import Button from "./Button";
 
 export default function EducationEntry() {
   const [current, setCurrent] = useState(false);
@@ -33,7 +33,7 @@ export default function EducationEntry() {
         inputType="date"
         current={current}
       />
-      <Submit />
+      <Button>Submit</Button>
     </form>
   );
 }

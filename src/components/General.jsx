@@ -1,9 +1,10 @@
 import { useState } from "react";
 
 import TextInput from "./TextInput";
-import Submit from "./Submit";
 import EditButton from "./EditButton";
 import Button from "./Button";
+
+import "../styles/displayGeneral.css";
 
 /**
  * @desc Stores form information in one state, and flag to render what kind
@@ -62,35 +63,43 @@ export default function General() {
       <h2>General Information</h2>
       <div className="general-body">
         <div className="disp-item">
-          <h4>Name</h4>
-          <p>{generalInfo.name}</p>
+          <h3 className="item-name">Name</h3>
+          <p className="item-value">{generalInfo.name}</p>
         </div>
         <div className="disp-item">
-          <h4>E-mail</h4>
-          <p>{generalInfo.email}</p>
+          <h3 className="item-name">E-mail</h3>
+          <p className="item-value">{generalInfo.email}</p>
         </div>
         <div className="disp-item">
-          <h4>Phone</h4>
-          <p>{generalInfo.phone}</p>
+          <h3 className="item-name">Phone</h3>
+          <p className="item-value">{generalInfo.phone}</p>
         </div>
         <div className="disp-item">
-          <h4>Date of Birth</h4>
-          <p>{generalInfo.dob}</p>
+          <h3 className="item-name">Date of Birth</h3>
+          <p className="item-value">{generalInfo.dob}</p>
         </div>
-        <EditButton />
+        <Button onClick={handleEdit} className="button">
+          Edit
+        </Button>
       </div>
     </section>
   );
 
+  function handleEdit() {
+    setFormFlag(true);
+  }
+
   function handleSubmit(e) {
     // Prevent the browser from reloading the page
     e.preventDefault();
-    setFormFlag(!formFlag);
+    setFormFlag(false);
   }
 
   if (formFlag) {
+    console.log(generalInfo);
     return <>{formComponent}</>;
   } else {
+    console.log(generalInfo);
     return <>{displayComponent}</>;
   }
 }

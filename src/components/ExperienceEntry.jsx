@@ -3,13 +3,15 @@ import { useState } from "react";
 import TextInput from "./TextInput";
 import TextArea from "./TextArea";
 import Checkbox from "./Checkbox";
-import Submit from "./Submit";
+import Button from "./Button";
 
 export default function ExperienceEntry() {
   const [current, setCurrent] = useState(false);
 
+  function handleSubmit() {}
+
   return (
-    <form method="post">
+    <form method="post" onSubmit={handleSubmit}>
       <TextInput id="companyName" label="Company Name" inputType="text" />
       <TextInput id="position" label="Position Title" inputType="text" />
       <Checkbox
@@ -26,7 +28,7 @@ export default function ExperienceEntry() {
         current={current}
       />
       <TextArea />
-      <Submit />
+      <Button>Submit</Button>
     </form>
   );
 }

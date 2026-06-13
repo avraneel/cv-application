@@ -15,6 +15,7 @@ export default function TextInput({
   if (id === "endDate" && current === true) {
     return null;
   }
+
   return (
     <div className={`${id} inputGroup`}>
       <label htmlFor={id}>{label}</label>
@@ -22,7 +23,7 @@ export default function TextInput({
         type={inputType}
         name={id}
         id={id}
-        value={value.id}
+        value={value[id]} // [] notation for computed property
         onChange={(e) => setState({ ...value, [id]: e.target.value })}
         autoComplete="off"
       />

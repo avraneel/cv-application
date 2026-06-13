@@ -1,0 +1,20 @@
+/* CSS for General Section - Display mode */
+
+.general-body {
+  display: grid;
+  gap: 1em;
+}
+
+.disp-item {
+  display: grid;
+  grid-template-columns: 2;
+  gap: 1em;
+}
+
+.item-name {
+  grid-column: 1;
+}
+
+.item-value {
+  grid-column: 2;
+}
