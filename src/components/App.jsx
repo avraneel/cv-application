@@ -14,7 +14,7 @@ export default function App() {
         <main className="main">
           <General />
           <Education />
-          {/*<Experience /> */}
+          <Experience />
         </main>
       </div>
     </>

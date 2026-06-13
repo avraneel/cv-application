@@ -38,7 +38,7 @@ export default function ExperienceEntry() {
         label="Position Title"
         inputType="text"
         value={experienceInfo}
-        onChange={setExperienceInfo}
+        setState={setExperienceInfo}
       />
       <TextInput
         id="current"
@@ -58,7 +58,7 @@ export default function ExperienceEntry() {
         id="endDate"
         label="Date of Leaving"
         inputType="date"
-        current={experienceInfo}
+        value={experienceInfo}
         setState={setExperienceInfo}
       />
       <TextArea />
