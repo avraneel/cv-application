@@ -11,6 +11,7 @@ export default function ExperienceEntry() {
     current: false,
     startDate: "",
     endDate: "",
+    responsibilities: "",
   });
 
   const [formFlag, setFormFlag] = useState(true);
@@ -61,7 +62,12 @@ export default function ExperienceEntry() {
         value={experienceInfo}
         setState={setExperienceInfo}
       />
-      <TextArea />
+      <TextArea
+        id="responsibilities"
+        label="Responsibilities"
+        value={experienceInfo}
+        setState={setExperienceInfo}
+      />
       <Button>Submit</Button>
     </form>
   );
@@ -89,6 +95,10 @@ export default function ExperienceEntry() {
             <p className="item-value">{experienceInfo.endDate}</p>
           </div>
         ) : null}
+        <div className="disp-item">
+          <h3 className="item-name">Responsibilities</h3>
+          <p className="item-value">{experienceInfo.responsibilities}</p>
+        </div>
         <Button onClick={handleEdit} className="button">
           Edit
         </Button>

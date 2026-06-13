@@ -95,10 +95,8 @@ export default function General() {
   }
 
   if (formFlag) {
-    console.log(generalInfo);
     return <>{formComponent}</>;
   } else {
-    console.log(generalInfo);
     return <>{displayComponent}</>;
   }
 }
